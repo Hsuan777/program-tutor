@@ -6,18 +6,43 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title><%- title %></title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./assets/style/all.css">
 </head>
 
 <body>
-  <header class="header">
-    這是 header
+  <header class="">
+    <nav class="container">
+      <ul class="flex items-center py-6">
+        <li>
+          <a href="./index.html" class="hover:bg-neutral">
+            <img src="./assets/images/logo.svg" alt="conding home" class="h-[42px] object-cover"/>
+          </a>
+        </li>
+        <li class="ml-auto">
+          <a href="./index.html" class="hover:text-primary hover:bg-neutral rounded py-2 px-6">首頁</a>
+        </li>
+        <li class="mx-6">
+          <a href="" class="hover:text-primary hover:bg-neutral rounded py-2 px-6">課程</a>
+        </li>
+        <li>
+          <a href="" class="hover:text-primary hover:bg-neutral rounded py-2 px-6">
+            登入
+          </a>
+        </li>
+      </ul>
+    </nav>
   </header>
-
+  <hr class="h-1 bg-gradient-to-r from-primary to-secondary border-0">
+  <main class="">
+  </main>
   <%- contents %>
 
-  <footer class="footer">
-    footer
+  <footer class="py-6 bg-neutral">
+    <p class="text-center text-gray-500">Coding Home © 2022 All Rights Reserved</p>
   </footer>
   <script src="./assets/js/vendors.js"></script>
   <script src="./assets/js/all.js"></script>
