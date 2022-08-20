@@ -1,0 +1,70 @@
+---
+title: 信用卡付款
+layout: ./app/layout.ejs
+engine: ejs
+current: course
+---
+<div class="bg-black lg:bg-base-300">
+  <nav class="flex justify-center mb-9 md:mb-12">
+    <div class="w-9/12 md:w-7/12 pt-6 pb-4">
+      <ul class="flex justify-between">
+        <li class="border-t border-primary w-full flex justify-start">
+          <div class="text-center -mt-3.5 -ml-8">
+            <div class="avatar">
+              <div class="w-5 bg-primary border rounded-full text-white text-xs mb-1">
+                1
+              </div>
+            </div>
+            <p>課程報名</p>
+          </div>
+        </li>
+        <li class="border-t border-primary w-full text-center">
+          <div class="-mt-3.5">
+            <div class="avatar">
+              <div class="w-5 bg-primary border rounded-full text-white text-xs mb-1">
+                2
+              </div>
+            </div>
+            <p>信用卡付款</p>
+          </div>
+        </li>
+        <li class="border-t w-full flex justify-end">
+          <div class="text-center -mt-3.5 -mr-8">
+            <div class="avatar">
+              <div class="w-5 bg-black border rounded-full text-white text-xs mb-1">
+                3
+              </div>
+            </div>
+            <p>付款成功</p>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</div>
+<div class="container flex justify-center mb-10 md:mb-20">
+  <div class="w-4/12 bg-base-300">
+    <div class="py-6 md:py-12 px-6 md:px-8">
+      <h2 class="mb-6 md:mb-12 text-2xl text-white text-center">信用卡付款</h2>
+      <p class="text-lg text-white mb-4 md:mb-6">請輸入信用卡資訊進行付款</p>
+      <form action="">
+        <div class="mb-4 md:mb-6">
+          <label for="" class="mb-1 block">信用卡帳號</label>
+          <input type="text" class="form-input w-full border-white rounded bg-transparent" placeholder="Xxxx-xxxx-xxxx-xxxx"/>
+        </div>
+        <div class="mb-4 md:mb-6">
+          <label for="" class="mb-1 block">安全碼</label>
+          <input type="text" class="form-input w-full border-white rounded bg-transparent" placeholder="***"/>
+        </div>
+        <div class="mb-4 md:mb-6">
+          <label for="" class="mb-1 block">有效日期</label>
+          <input type="text" class="form-input w-full border-white rounded bg-transparent" placeholder="(MM-YY)"/>
+        </div>
+        <div class="flex justify-center">
+          <p class="text-lg">NT$1600</p>
+          <input type="submit" value="下一步" class="py-2 px-8 bg-gradient-to-r from-secondary to-primary rounded-lg text-white cursor-pointer ml-auto" />
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
