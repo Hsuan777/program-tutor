@@ -17,6 +17,7 @@
   "dependencies": {
     "@babel/core": "^7.9.6",
     "@babel/preset-env": "^7.9.6",
+    "aos": "^2.3.4",
     "autoprefixer": "10.0",
     "browser-sync": "^2.26.7",
     "daisyui": "^2.22.0",

@@ -3,7 +3,11 @@
 @tailwind utilities;
 
 @layer base {
+  html {
+    font-family: -apple-system, "Roboto", BlinkMacSystemFont, "Segoe UI", "Microsoft JhengHei", Roboto, "Helvetica Neue", Arial, sans-serif;
+  }
   body {
     background-color: #000;
+    line-height: 1.5;
   }
 }

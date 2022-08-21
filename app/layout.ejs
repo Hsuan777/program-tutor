@@ -11,19 +11,21 @@
   <link href="https://fonts.googleapis.com/css2?family=Material+Icons" rel="stylesheet">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans+TC:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/css/datepicker.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <link rel="stylesheet" href="./assets/style/all.css">
 </head>
 
 <body>
   <header class="bg-neutral">
-    <nav class="container">
-      <ul class="flex items-center py-6">
+    <nav class="container flex items-center md:py-6">
+      <a href="./index.html" class="hover:bg-black">
+        <img src="./assets/images/logo.svg" alt="conding home" class="hidden md:block h-[42px] object-cover"/>
+        <img src="./assets/images/logo2.svg" alt="conding home" class="md:hidden h-[24px] object-cover"/>
+      </a>
+      <ul class="hidden md:flex items-center ml-auto">
         <li>
-          <a href="./index.html" class="hover:bg-black">
-            <img src="./assets/images/logo.svg" alt="conding home" class="h-[42px] object-cover"/>
-          </a>
-        </li>
-        <li class="ml-auto">
           <a href="./index.html" class="hover:text-primary hover:bg-black rounded py-2 px-6">首頁</a>
         </li>
         <li class="mx-6">
@@ -75,6 +77,24 @@
           </div>
         </li>
       </ul>
+      <div class="md:hidden dropdown dropdown-end ml-auto">
+        <label tabindex="0" class="btn btn-ghost rounded-btn">
+          <span class="material-symbols-outlined text-primary">drag_handle</span>
+        </label>
+        <ul tabindex="0" class="dropdown-content w-52 px-5 mt-2 bg-base-300 rounded-xl">
+          <li class="py-2 text-center border-b">
+            <a href="./index.html" class="hover:text-primary hover:bg-black rounded py-2 px-6">首頁</a>
+          </li>
+          <li class="py-2 text-center border-b">
+            <a href="./course.html" class="hover:text-primary hover:bg-black rounded py-2 px-6">課程</a>
+          </li>
+          <li class="py-2 text-center">
+            <label for="my-modal" class="modal-button hover:text-primary hover:bg-black rounded py-2 px-6 cursor-pointer">登入</label>
+            <input type="checkbox" id="mobile_my-modal" class="modal-toggle" />
+          </li>
+        </ul>
+      </div>
+
     </nav>
   </header>
   <hr class="h-1 bg-gradient-to-r from-primary to-secondary border-0">
@@ -86,7 +106,9 @@
     <p class="text-center text-gray-500">Coding Home © 2022 All Rights Reserved</p>
   </footer>
   <script src="./assets/js/vendors.js"></script>
-  <script src="./assets/js/all.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.2.0/dist/js/datepicker-full.min.js"></script>
+  <script type="module" src="./assets/js/all.js"></script>
 </body>
 
 </html>

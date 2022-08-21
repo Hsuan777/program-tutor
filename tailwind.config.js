@@ -1,7 +1,11 @@
 module.exports = {
   content: ["./app/**/*.{html,ejs}"],
   theme: {
-    extend: {},
+    extend: {
+      fontFamily: {
+        'azeret': ['Azeret Mono', 'monospace'],
+      },
+    },
     container: {
       center: true,
       padding: "12px",
